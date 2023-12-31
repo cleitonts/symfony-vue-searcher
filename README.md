@@ -14,5 +14,8 @@ It is composed by 3 services:
 
 1. 😀 Clone this rep.
 2. Run `docker-compose up -d`
-3. Make sure you have an updated node version in you machine and run `npm i` inside frontend folder, followed by `npm run dev`
+3. Make sure you have an updated node version in your machine and run `npm i` inside frontend folder, followed by `npm run dev`
 4. run ` docker exec -it -u root search_php-fpm bash` to open the container and `php bin/console doctrine:fixtures:load` to create fake data
+
+
+For performance improvements you may need to turn off xdebug in the php-fpm container
