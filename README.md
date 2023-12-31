@@ -1,4 +1,4 @@
-# 🐳 Docker + PHP 8 + PostgreSQL + Vue 3 + Typescript + Nginx + Symfony 6 (Messenger, mailer) + Redis
+# 🐳 Docker + PHP 8 + PostgreSQL + Vue 3 + Nginx + Symfony 6
 
 ## Description
 
@@ -13,5 +13,6 @@ It is composed by 3 services:
 ## Installation
 
 1. 😀 Clone this rep.
-
 2. Run `docker-compose up -d`
+3. Make sure you have an updated node version in you machine and run `npm i` inside frontend folder, followed by `npm run dev`
+4. run ` docker exec -it -u root search_php-fpm bash` to open the container and `php bin/console doctrine:fixtures:load` to create fake data
